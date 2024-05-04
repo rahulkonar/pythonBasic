@@ -1,11 +1,22 @@
 import sys
 
-# Gather our code in a main() function
-def func1(n):
-    print(n)
+# Gather our co
+# de in a main() function
+def func1(x):
+    numList = []
+    n = 5
+    i = 0
+    while i < n:
+        numList.append(input())
+        i = i + 1
+    sum = 0
+    for num in numList:
+        sum += int(num)    
+    print(str(numList)+" = "+str(sum))
+   # print(sum)
+
 def main():
-    func1(sys.argv[1])
-    print("1")
-if __name__=="__main__":
+    func1(5)
+if __name__== "__main__":
     main()
 #print('Hello there', sys.argv[1])
